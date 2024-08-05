@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração</title>
+    <style>
+        body{
+            font: normal 10pt Arial;
+        }
+        input{
+            font: normal 10pt Arial;
+            width: 100pt;
+        }
+        div#resultado{
+            margin-top: 20px;
+        }
+        h1{
+            font: normal 30px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subtração</h1>
+    <input type="number" name="n1" id="n1"> -
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="sub" onclick="subtracao()">
+    <div id="resultado"><strong>Resultado</strong></div>
+    <script>
+        function subtracao() {
+            var num1 = window.document.getElementById('n1')
+            var num2 = window.document.getElementById('n2')
+            var subtracao = window.document.getElementById('resultado')
+            var n1n = Number(num1.value)
+            var n2n = Number(num2.value)
+            var sub = n1n - n2n
+            resultado.innerHTML = `O resultado entre ${n1n} - ${n2n} = ${sub}`
+        }
+    </script>
+</body>
+</html>

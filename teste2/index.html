@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma 2.0</title>
+    <style>
+        body {
+            font:normal 10pt Arial;
+
+        }
+        input{
+
+            font: normal 10pt Arial;
+            width: 100px;
+        }
+        div#rest{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2"> 
+    <input type="button" value="somar" onclick="somar()">
+    <div id="rest"><strong>Resultado</strong></div>
+
+    <script>
+        function somar(){
+        var n1n = window.document.getElementById('n1')
+        var n2n = window.document.getElementById('n2')
+        var somatoria = window.document.getElementById('rest')
+        var num1 = Number(n1n.value)
+        var num2 = Number(n2n.value)
+        var s = num1 + num2 
+        rest.innerHTML = `A soma de ${num1} + ${num2} = ${s} ` 
+        }
+    </script>
+</body>
+</html>

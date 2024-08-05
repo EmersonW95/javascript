@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    Digite qual é seu país:<input type="text" name="tex" id="tex">!
+    <input type="button" value="Verificar" onclick="país()">
+    <div id="res"></div>
+    <script>
+        function país(){
+            var p = window.document.getElementById('tex')
+            var res = window.document.getElementById('res')
+            var place = (p.value)
+            res.innerHTML = `Você é do ${place}, `
+            if (place == 'Brasil'){
+                res.innerHTML = `<p>Você  é Brasileiro!</p>`
+            } else{
+                res.innerHTML =`<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+</head>
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+        h1{
+            font: normal 20px Arial;
+        }
+    </style>
+<body>
+    <h1>Multiplicação</h1>
+    <input type="number" name="n1" id="n1"> x
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="multiplicação" onclick="multiplicacao()">
+    <div id="multiplicaçao"></div>
+    <script>
+    function multiplicacao(){
+        var num1 = window.document.getElementById('n1')
+        var num2 = window.document.getElementById('n2')
+        var mu = window.document.getElementById('multiplicaçao')
+        var n1n = Number(num1.value)
+        var n2n = Number(num2.value)
+        s = n1n * n2n
+        multiplicaçao.innerHTML = `A multiplicação entre ${n1n} x ${n2n} = ${s}`
+    }
+    </script>
+</body>
+</html>
